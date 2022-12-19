@@ -1,6 +1,8 @@
 package com.springdemo.entity;
 
 
+import org.springframework.ui.Model;
+
 import javax.persistence.*;
 
 @Entity
@@ -22,6 +24,12 @@ public class Customer {
     private String email;
 
     public Customer() {
+    }
+
+    public Customer(Model model) {
+        setEmail((String) model.getAttribute("email"));
+        setFirst_name((String) model.getAttribute("first_name"));
+        setLast_name((String) model.getAttribute("last_name"));
     }
 
     public int getID() {
