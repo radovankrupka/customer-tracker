@@ -9,18 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa9b6054-399b-49ee-b34a-ae8e5ca05426" name="Changes" comment="enviroment setup, customer list implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/service/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/util/SortUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add-customer-form.jsp" afterDir="false" />
+    <list default="true" id="aa9b6054-399b-49ee-b34a-ae8e5ca05426" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/aspects/CRMLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/config/AOPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aspectjweaver-1.9.9.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springdemo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/DAO/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springdemo/DAO/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/DAO/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springdemo/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/springdemo/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springdemo/entity/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-crud-demo-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +24,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,19 +51,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/_skola/Programovanie/web-customer-tracker/src/main/webapp/WEB-INF/lib",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.29093933"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/_skola/Programovanie/web-customer-tracker/src/main/webapp/WEB-INF/lib&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.29093933&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d41d8cd98f00b204e9800998ecf8427e&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_skola\Programovanie\web-customer-tracker\src\main\webapp\WEB-INF\lib" />
@@ -175,7 +170,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671452555200</updated>
-      <workItem from="1671452556505" duration="24406000" />
+      <workItem from="1671452556505" duration="24679000" />
+      <workItem from="1671618344838" duration="1661000" />
+      <workItem from="1671658604724" duration="1456000" />
     </task>
     <task id="LOCAL-00001" summary="enviroment setup, customer list implementation">
       <created>1671465195416</created>
@@ -184,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671465195416</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="final, update/delete, search, sorting">
+      <created>1671492164705</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671492164705</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +196,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="enviroment setup, customer list implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="enviroment setup, customer list implementation" />
+    <MESSAGE value="final, update/delete, search, sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="final, update/delete, search, sorting" />
   </component>
 </project>
